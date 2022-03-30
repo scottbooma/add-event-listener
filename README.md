@@ -11,3 +11,27 @@ mango.addEventListener('click', function (event) {
   mango.style.animationTimingFunction = 'linear'
 })
 ```
+
+
+Here is my code:
+
+```js
+const mango = document.querySelector("#mangue")
+let count = 0
+mango.addEventListener("click", (event) => {
+    count += 1
+    if (count <= 1 && count > 0) {
+        alert("MANGO")
+    }
+    if (count <= 2 && count > 1) {
+        alert("Yep, still a mango")
+    }
+    if (count <= 3 && count > 2) {
+        alert("This mango ain't going anywhere")
+    }
+    if (count <= 4 && count > 3) {
+        alert("NO MANGO")
+        mango.src = ""
+    }
+})
+```
